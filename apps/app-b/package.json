@@ -4,9 +4,10 @@
   "scripts": {
     "build": "mkdir -p dist && echo \"Your application output!\" > dist/app-output.txt && echo \"Application B is built!\"",
     "lint": "echo \"Linted!\"",
-    "check-types": "echo \"Types checked!\""
+    "check-types": "echo \"Types checked!\"",
+    "start:dev": "node -e \"setInterval(() => console.log('app-b running'), 3000)\""
   },
   "dependencies": {
-    "tooling-config": "*"
+    "tooling-config": "workspace:*"
   }
 }
