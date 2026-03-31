@@ -2,10 +2,10 @@
   "name": "app-a",
   "description": "An application that uses other Internal Packages",
   "scripts": {
-    "build": "mkdir -p dist && echo \"Your application output!\" > dist/app-output.txt && echo \"Application A is built!\"",
+    "build": "mkdir -p dist && cp src/index.html dist/index.html && echo \"Application A is built!\"",
     "lint": "echo \"Linted!\"",
     "check-types": "echo \"Types checked!\"",
-    "start:dev": "node -e \"setInterval(() => console.log('app-a running'), 3000)\""
+    "start:dev": "node -e \"console.log('starting app-a'); setInterval(() => console.log('app-a running'), 3000)\""
   },
   "dependencies": {
     "pkg-a": "workspace:*",

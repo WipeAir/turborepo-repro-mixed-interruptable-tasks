@@ -1,7 +1,7 @@
 {
   "name": "pkg-a",
   "scripts": {
-    "build": "echo \"Building at the speed of Turbo.\" > output-file.txt && cat output-file.txt",
+    "build": "mkdir -p dist && cp src/index.html dist/index.html && echo \"pkg-a is built!\"",
     "lint": "echo \"Linted!\"",
     "check-types": "echo \"Types checked!\""
   },

@@ -3,7 +3,7 @@
   "description": "A barebones Turborepo example for working with Task Graphs.",
   "private": true,
   "devDependencies": {
-    "turbo": "^2.8.21-canary.9"
+    "turbo": "2.9.1-canary.1"
   },
   "packageManager": "yarn@4.13.0",
   "workspaces": [

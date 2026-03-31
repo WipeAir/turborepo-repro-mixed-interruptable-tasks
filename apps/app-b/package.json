@@ -2,10 +2,10 @@
   "name": "app-b",
   "description": "A workspace to use as a model for a final application that the rest of your dependencies are building towards.",
   "scripts": {
-    "build": "mkdir -p dist && echo \"Your application output!\" > dist/app-output.txt && echo \"Application B is built!\"",
+    "build": "mkdir -p dist && cp src/index.html dist/index.html && echo \"Application B is built!\"",
     "lint": "echo \"Linted!\"",
     "check-types": "echo \"Types checked!\"",
-    "start:dev": "node -e \"setInterval(() => console.log('app-b running'), 3000)\""
+    "start:dev": "node -e \"console.log('starting app-b'); setInterval(() => console.log('app-b running'), 3000)\""
   },
   "dependencies": {
     "tooling-config": "workspace:*"

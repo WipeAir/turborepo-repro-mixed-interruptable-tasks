@@ -2,12 +2,14 @@
   "$schema": "https://turborepo.dev/schema.json",
   "tasks": {
     "build": {
+      "inputs": [
+        "src/**/*"
+      ],
       "dependsOn": [
         "prebuild",
         "^build"
       ],
       "outputs": [
-        "output-file.txt",
         "dist/**"
       ]
     },
@@ -15,13 +17,17 @@
     "lint": {},
     "check-types": {},
     "start:dev": {
-      "dependsOn": ["^build"],
+      "dependsOn": [
+        "^build"
+      ],
       "persistent": true,
       "interruptible": false,
       "cache": false
     },
     "app-a#start:dev": {
-      "dependsOn": ["^build"],
+      "dependsOn": [
+        "^build"
+      ],
       "persistent": true,
       "interruptible": true,
       "cache": false
